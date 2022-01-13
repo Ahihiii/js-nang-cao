@@ -4,6 +4,7 @@ import Header from "./components/header";
 import TuyenSinh from "./pages/TuyenSinh";
 import TrangChu from "./pages/TrangChu";
 import ChiTietNews from "./pages/ChiTietNews";
+import DangNhap from "./pages/DangNhap";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -20,9 +21,9 @@ router.on({
     "/TuyenSinh": () => {
         print(TuyenSinh.render());
     },
-    // "/ChuongTrinhDT": () => {
-    //     print(ChuongTrinhDT.render());
-    // },
+    "/ChuongTrinhDT": () => {
+        print(DangNhap.render());
+    },
     // "/GocTuyenSinh": () => {
     //     print(GocTuyenSinh.render());
     // },
