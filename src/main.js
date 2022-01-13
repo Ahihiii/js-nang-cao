@@ -1,9 +1,9 @@
 import Navigo from "navigo";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import AboutPage from "./pages/about";
-import HomePage from "./pages/home";
-import NewsDetail from "./pages/newsDetail";
+import TuyenSinh from "./pages/TuyenSinh";
+import TrangChu from "./pages/TrangChu";
+import ChiTietNews from "./pages/ChiTietNews";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -15,14 +15,23 @@ const print = (content) => {
 
 router.on({
     "/": () => {
-        print(HomePage.render());
+        print(TrangChu.render());
     },
-    "/about": () => {
-        print(AboutPage.render());
+    "/TuyenSinh": () => {
+        print(TuyenSinh.render());
     },
-    "/news/:id": ({ data }) => {
+    // "/ChuongTrinhDT": () => {
+    //     print(ChuongTrinhDT.render());
+    // },
+    // "/GocTuyenSinh": () => {
+    //     print(GocTuyenSinh.render());
+    // },
+    // "/TuyenDung": () => {
+    //     print(TuyenDung.render());
+    // },
+    "/ChiTietNews/:id": ({ data }) => {
         const { id } = data;
-        print(NewsDetail.render(id));
+        print(ChiTietNews.render(id));
     },
 });
 

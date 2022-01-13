@@ -1,4 +1,4 @@
-const AboutPage = {
+const TuyenSinh = {
     render() {
         return /* html */`
             <div class="max-w-5xl mx-auto">
@@ -7,4 +7,4 @@ const AboutPage = {
         `;
     },
 };
-export default AboutPage;
+export default TuyenSinh;
