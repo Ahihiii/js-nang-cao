@@ -2,7 +2,7 @@ const AboutPage = {
     render() {
         return /* html */`
             <div class="max-w-5xl mx-auto">
-                <h1>About Page</h1>
+                <h1>Tuyển sinh</h1>
             </div>
         `;
     },
