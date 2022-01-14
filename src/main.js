@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/NewsPage";
 import DetailNews from "./pages/DetailNews";
 import Login from "./pages/Login";
+import ListNews from "./admin/ListNews";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -28,12 +29,12 @@ router.on({
     "/News": () => {
         print(NewsPage.render());
     },
-    // "/TuyenDung": () => {
-    //     print(TuyenDung.render());
-    // },
     "/DetailNews/:id": ({ data }) => {
         const { id } = data;
         print(DetailNews.render(id));
+    },
+    "/ListNews": () => {
+        print(ListNews.render());
     },
 });
 

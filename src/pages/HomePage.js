@@ -15,7 +15,7 @@ const HomePage = {
             </div>
                 
             </div>
-            <div class="DetailNews pt-12 max-w-screen-xl mx-auto">
+            <div class="DetailNews pt-12 max-w-screen-xl  mx-auto">
                 <h2 class="text-2xl font-semibold my-4 text-white">News</h2>
                 <div class="grid grid-cols-3 gap-7">
                     ${data.map((post) => `
