@@ -1,6 +1,6 @@
 import data from "../data";
 
-const ChiTietNews = {
+const DetailNews = {
     render(id) {
         const found = data.find((element) => element.id === id);
 
@@ -11,4 +11,4 @@ const ChiTietNews = {
         </div>`;
     },
 };
-export default ChiTietNews;
+export default DetailNews;

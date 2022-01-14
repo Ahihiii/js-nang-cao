@@ -1,11 +1,11 @@
-const DangNhap = {
+const Login = {
     render() {
         return `
-         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md w-full space-y-8">
+         <div class="bg-[url('././images/bg.jfif')] min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md h-screen pt-20 w-full space-y-8">
           <div>
-            <img class="mx-auto h-12 w-auto" src="../../images/logo.png" alt="Workflow">
-            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <img class="mx-auto h-40 w-auto" src="../../images/g_t_a_logo.png" alt="Workflow">
+            <h2 class="mt-6 text-white text-center text-3xl font-extrabold">
               Sign in to your account
             </h2>
             
@@ -26,20 +26,20 @@ const DangNhap = {
             <div class="flex items-center justify-between">
               <div class="flex items-center">
                 <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
-                <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                <label for="remember-me" class="ml-2 block text-sm text-white">
                   Remember me
                 </label>
               </div>
       
               <div class="text-sm">
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                <a href="#" class="font-medium text-orange-500 hover:text-orange-600">
                   Forgot your password?
                 </a>
               </div>
             </div>
       
             <div>
-              <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                   <!-- Heroicon name: solid/lock-closed -->
                   <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -56,4 +56,4 @@ const DangNhap = {
     },
 };
 
-export default DangNhap;
+export default Login;

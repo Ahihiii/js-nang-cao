@@ -1,10 +1,11 @@
 import Navigo from "navigo";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import TuyenSinh from "./pages/TuyenSinh";
-import TrangChu from "./pages/TrangChu";
-import ChiTietNews from "./pages/ChiTietNews";
-import DangNhap from "./pages/DangNhap";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import NewsPage from "./pages/NewsPage";
+import DetailNews from "./pages/DetailNews";
+import Login from "./pages/Login";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -16,23 +17,23 @@ const print = (content) => {
 
 router.on({
     "/": () => {
-        print(TrangChu.render());
+        print(HomePage.render());
     },
-    "/TuyenSinh": () => {
-        print(TuyenSinh.render());
+    "/About": () => {
+        print(AboutPage.render());
     },
-    "/ChuongTrinhDT": () => {
-        print(DangNhap.render());
+    "/Login": () => {
+        print(Login.render());
     },
-    // "/GocTuyenSinh": () => {
-    //     print(GocTuyenSinh.render());
-    // },
+    "/News": () => {
+        print(NewsPage.render());
+    },
     // "/TuyenDung": () => {
     //     print(TuyenDung.render());
     // },
-    "/ChiTietNews/:id": ({ data }) => {
+    "/DetailNews/:id": ({ data }) => {
         const { id } = data;
-        print(ChiTietNews.render(id));
+        print(DetailNews.render(id));
     },
 });
 
