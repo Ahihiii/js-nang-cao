@@ -1,6 +1,6 @@
 import data from "../data";
 
-const ListNews = {
+const News = {
     render() {
         return `
         <div class="flex flex-col">
@@ -56,4 +56,4 @@ const ListNews = {
     },
 };
 
-export default ListNews;
+export default News;

@@ -3,10 +3,12 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import NewsPage from "./pages/NewsPage";
 import DetailNews from "./pages/DetailNews";
-import Login from "./pages/Login";
-import ListNews from "./admin/ListNews";
+import News from "./admin/News";
+import NewsPage from "./pages/NewsPage";
+import AddNew from "./admin/AddNew";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -20,21 +22,27 @@ router.on({
     "/": () => {
         print(HomePage.render());
     },
-    "/About": () => {
+    "/AboutPage": () => {
         print(AboutPage.render());
     },
-    "/Login": () => {
-        print(Login.render());
-    },
-    "/News": () => {
+    "/NewsPage": () => {
         print(NewsPage.render());
+    },
+    "/SignIn": () => {
+        print(SignIn.render());
+    },
+    "/SignUp": () => {
+        print(SignUp.render());
     },
     "/DetailNews/:id": ({ data }) => {
         const { id } = data;
         print(DetailNews.render(id));
     },
-    "/ListNews": () => {
-        print(ListNews.render());
+    "/News": () => {
+        print(News.render());
+    },
+    AddNew: () => {
+        print(AddNew.render());
     },
 });
 
