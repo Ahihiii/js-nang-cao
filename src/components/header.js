@@ -3,12 +3,20 @@ import Nav from "./nav";
 const Header = {
     render() {
         return /* html */`
-        <header class="max-w-5xl mx-auto">
-            <div class="bg-blue-800 py-4">
-                <img src="../../images/logo.png" class="mx-auto w-40" />
-            </div>
-            <div class="bg-orange-500">
+        <header class=" mx-auto bg-black grid grid-cols-[200px,auto,150px]">
+            <div class="py-2 ">
+                <img src="../../images/gta_logo.png" class=" w-14 mx-auto" />
+            </div> 
+
+            <div class="p-2 text-white mx-auto">
             ${Nav.render()}
+            </div>
+
+            <div class="text-white mx-auto p-6">
+            <a href="/SignIn">
+            <i class="fas fa-user text-2xl"></i>
+            </a>
+            
             </div>
         </header>`;
     },
