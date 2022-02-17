@@ -8,7 +8,7 @@ const Header = {
                 <img src="../../images/gta_logo.png" class=" w-14 mx-auto" />
             </div> 
 
-            <div class="p-2 text-white mx-auto">
+            <div class="p-2 text-white ">
             ${Nav.render()}
             </div>
 
@@ -16,8 +16,9 @@ const Header = {
             <a href="/SignIn">
             <i class="fas fa-user text-2xl"></i>
             </a>
-            
+            <i class="fa-solid fa-cart-shopping text-2xl"></i>
             </div>
+
         </header>`;
     },
 };

@@ -4,20 +4,33 @@ const HomePage = {
     render() {
         return /* html */`
         <div class="mx-auto bg-gray-900"> 
-            <div class="bg-black grid grid-cols-[1000px,auto]">
+            <div class="bg-black max-w-screen-xl mx-auto grid grid-cols-[1010px,auto]">
             <div>
-                 <img src="../../images/the_contract.jpg"/>
+                 <img src="https://trinhde.vn/game-god-of-war-cho-pc/imager_465.jpg"/>
             </div>
 
-            <div class="text-white mx-auto py-20"> 
-                <p>Grand Theft Auto </p>
-                <h1 class="text-5xl py-5">The Contract - Out Now </h1>
+            <div class="text-white mx-auto py-6 grid grid-rows-3"> 
+                <div class="grid grid-cols-[80px,auto]">
+                    <img class="h-24 min-h-0" src="https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7"> 
+                    <p>GOD OF WAR </p>
+                </div>
+                
+                <div class="grid grid-cols-[80px,auto]">
+                    <img class="h-24 min-h-0" src="https://m.media-amazon.com/images/M/MV5BZTg4NGUxZWMtNmU3OC00YTNmLTkwYWMtYjE3OWQ4ODY3ODBhXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg"> 
+                    <p>DYING LIGHT 2 </p>
+                </div>
+
+                <div class="grid grid-cols-[80px,auto]">
+                    <img class="h-24 min-h-0" src="https://i.redd.it/3jbxpsgev8461.png"> 
+                    <p>CYBERPUNK 2077 </p>
+                </div>
             </div>
                 
             </div>
+            
             <div class="DetailNews pt-12 max-w-screen-xl  mx-auto">
                 <h2 class="text-2xl font-semibold my-4 text-white">News</h2>
-                <div class="grid grid-cols-3 gap-7">
+                <div class="grid grid-cols-5 gap-3">
                     ${data.map((post) => `
                         <div class=" rounded-lg bg-black">
                             <a href="/DetailNews/${post.id}">
